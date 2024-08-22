@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
 
     <title>Login</title>
 </head>
@@ -31,23 +32,6 @@
             </div>
         </div>
     </form>
-    <script>
 
-            function logar(){
-                    
-                var login = document.getElementById('usuario').value;
-                var senha = document.getElementById('senha').value;
-
-                if(login == "admin" && senha == "admin"){   
-                    alert('Sucesso');
-                    //location.href = "home.html";
-                    window.open('poslogin/home.html')
-                }else{
-                    alert('usuario ou senha incorretos');
-                }
-    
-            }   
-
-        </script>
 </body>
 </html>
