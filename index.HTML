@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Login</title>
+</head>
+<body>
+
+    <form>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça seu login<br> E entre para o time</h1>
+                <img src="image/Dev.svg" class="left-img" alt="Dev">
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" placeholder="usuario">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="senha">
+                    </div>
+                    <input type="submit" onclick="logar(); return false">
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+
+            function logar(){
+                    
+                var login = document.getElementById('usuario').value;
+                var senha = document.getElementById('senha').value;
+
+                if(login == "admin" && senha == "admin"){   
+                    alert('Sucesso');
+                    //location.href = "home.html";
+                    window.open('poslogin/home.html')
+                }else{
+                    alert('usuario ou senha incorretos');
+                }
+    
+            }   
+
+        </script>
+</body>
+</html>
